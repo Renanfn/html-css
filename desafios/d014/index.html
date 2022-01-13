@@ -24,6 +24,21 @@
             border: 1px solid black;
             padding: 10px;
         }
+
+        th {
+            background-color: gray;
+            color: white;
+        }
+
+        .media {
+            text-align: left;
+        }
+
+        td.cmedia {
+            background-color: gray;
+            color: white;
+            font-weight: bolder;
+        }
     </style>
 </head>
 <body>
@@ -35,8 +50,8 @@
             <th colspan="2">Notas</th>
             <th rowspan="2">Média</th>
             <tr>
-                <td>Nota 1</td>
-                <td>Nota 2</td>
+                <th>Nota 1</td>
+                <th>Nota 2</td>
             </tr>
         </thead>
         <tbody>
@@ -65,9 +80,9 @@
                 <td>0.0</td>
                 <td>0.0</td>
             </tr>
-            <tr>
+            <tr class="media">
                 <th colspan="4">Média Exatas</th>
-                <td>0.0</td>
+                <td class="cmedia">0.0</td>
             </tr>
             <tr>
                 <th rowspan="2">Humanas</th>
@@ -82,9 +97,9 @@
                 <td>0.0</td>
                 <td>0.0</td>
             </tr>
-            <tr>
+            <tr class="media">
                 <th colspan="4">Média Humanas</th>
-                <td>0.0</td>
+                <td class="cmedia">0.0</td>
             </tr>
         </tbody>
         <tfoot>
